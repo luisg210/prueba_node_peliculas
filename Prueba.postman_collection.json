@@ -1,0 +1,858 @@
+{
+	"info": {
+		"_postman_id": "2aaa90c7-0ae3-4f40-8c9d-7905a78b2ca9",
+		"name": "Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Movie",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "offset",
+								"value": "0",
+								"type": "default"
+							},
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjA2MjQxOSwiZXhwIjoxNjg2MTA1NjE5fQ.ZTtjeQos8f5lz9fFij0hsDyfdd8TMHaAcqYo-i3SSsk",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							},
+							{
+								"key": "order",
+								"value": "likes",
+								"description": "title or likes",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}movies/api/v1/all_movies",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"all_movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Available",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "offset",
+								"value": "0",
+								"type": "default"
+							},
+							{
+								"key": "order",
+								"value": "title",
+								"description": "title or likes",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}movies/api/v1/",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchMovie",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "offset",
+								"value": "0",
+								"type": "default"
+							},
+							{
+								"key": "order",
+								"value": "title",
+								"description": "title or likes",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}movies/api/v1/search/end game",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search",
+								"end game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "offset",
+								"value": "0",
+								"type": "default"
+							},
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							},
+							{
+								"key": "order",
+								"value": "title",
+								"description": "tile or likes",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}movies/api/v1/filter/no_available",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"filter",
+								"no_available"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "no_available",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}movies/api/v1/0198dce8-4d3d-47e6-9bb3-84ef8fac5e96ddd",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"0198dce8-4d3d-47e6-9bb3-84ef8fac5e96ddd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjA4MDc4NSwiZXhwIjoxNjg2MTIzOTg1fQ.FVpeUs-G6I6vTvJ2A6PDhB-8U1TFDuUDUCP5SqN54cY",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}movies/api/v1/14",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"14"
+							],
+							"query": [
+								{
+									"key": "x-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "admin@admin.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjA4MDc4NSwiZXhwIjoxNjg2MTIzOTg1fQ.FVpeUs-G6I6vTvJ2A6PDhB-8U1TFDuUDUCP5SqN54cY",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Avengers: End Game 2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Movie Avenger: End Game. 2019 Movie",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "rental_price",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "sale_price",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "1.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}movies/api/v1/",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateWith",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Avengers: End Game 2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Movie Avenger: End Game. 2019 Movie",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "rental_price",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "sale_price",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}movies/api/v1/withimage",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"withimage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslike",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjA2MjQxOSwiZXhwIjoxNjg2MTA1NjE5fQ.ZTtjeQos8f5lz9fFij0hsDyfdd8TMHaAcqYo-i3SSsk",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}movies/api/v1/deslike/1",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"deslike",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "like",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjA2MjQxOSwiZXhwIjoxNjg2MTA1NjE5fQ.ZTtjeQos8f5lz9fFij0hsDyfdd8TMHaAcqYo-i3SSsk",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"id_movie\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}movies/api/v1/like",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Avengers: End Game",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Movie Avenger: End Game. 2019 Movie.",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "rental_price",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "sale_price",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "1593618209962.jpg",
+									"disabled": true
+								},
+								{
+									"key": "is_available",
+									"value": "true",
+									"type": "default",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}movies/api/v1/16",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"16"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}users/api/v1/",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"api",
+								"v1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}users/api/v1/login",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "renew",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin122wd2@admin.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}users/api/v1/renew",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"api",
+								"v1",
+								"renew"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin2@admin.com\",\r\n    \"password\": \"1234\",\r\n    \"name\": \"Luis\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}users/api/v1/register",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMTIyd2QyQGFkbWluLmNvbSIsImlhdCI6MTY4NjAxNTM0NywiZXhwIjoxNjg2MDU4NTQ3fQ.-1AFnom0Dmd897aKSSTZaKAzOJHIUZI64Ekg2C8eU_4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"1234\",\r\n    \"name\": \"Luis\",\r\n    \"role\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}users/api/v1/1",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"api",
+								"v1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "saleMovie",
+			"item": [
+				{
+					"name": "sale",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"qty\": 10,\r\n    \"id_movie\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}sale_movies/api/v1/",
+							"host": [
+								"{{URL}}sale_movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rentMovie",
+			"item": [
+				{
+					"name": "Rent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"return_movie\": \"10/06/2023\",\r\n    \"qty\": 10,\r\n    \"id_movie\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}rent_movies/api/v1/",
+							"host": [
+								"{{URL}}rent_movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Return",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"is_return\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}rent_movies/api/v1/return_movie/9",
+							"host": [
+								"{{URL}}rent_movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"return_movie",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Avengers: End Game\",\r\n    \"description\": \"Movie Avenger: End Game. 2019 Movie\",\r\n    \"stock\": 200,\r\n    \"rental_price\": 4.00,\r\n    \"sale_price\": 6.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}movies/api/v1/0198dce8-4d3d-47e6-9bb3-84ef8fac5e96",
+							"host": [
+								"{{URL}}movies"
+							],
+							"path": [
+								"api",
+								"v1",
+								"0198dce8-4d3d-47e6-9bb3-84ef8fac5e96"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL_PROD",
+			"value": "https://movies-api-3pj2.onrender.com/",
+			"type": "default",
+			"disabled": true
+		},
+		{
+			"key": "URL_LOCAL",
+			"value": "http://localhost:5000/",
+			"type": "default",
+			"disabled": true
+		}
+	]
+}
