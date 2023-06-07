@@ -20,7 +20,7 @@
 							},
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjA2MjQxOSwiZXhwIjoxNjg2MTA1NjE5fQ.ZTtjeQos8f5lz9fFij0hsDyfdd8TMHaAcqYo-i3SSsk",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjExMjkxOSwiZXhwIjoxNjg2MTU2MTE5fQ.nldbimsEcWkvvNEsZpRKrcF3rdeFPlHSq4_kM-WJXbE",
 								"type": "default"
 							},
 							{
@@ -167,14 +167,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}movies/api/v1/0198dce8-4d3d-47e6-9bb3-84ef8fac5e96ddd",
+							"raw": "{{URL}}movies/api/v1/16",
 							"host": [
 								"{{URL}}movies"
 							],
 							"path": [
 								"api",
 								"v1",
-								"0198dce8-4d3d-47e6-9bb3-84ef8fac5e96ddd"
+								"16"
 							]
 						}
 					},
@@ -409,7 +409,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjA2MjQxOSwiZXhwIjoxNjg2MTA1NjE5fQ.ZTtjeQos8f5lz9fFij0hsDyfdd8TMHaAcqYo-i3SSsk",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjE0ODM4NywiZXhwIjoxNjg2MTkxNTg3fQ.szd4YYE1qrpfFq4HjapsnRc3t9i6gzQzdx3c98CgqfI",
 								"type": "default"
 							},
 							{
@@ -420,7 +420,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"id_movie\": 1\r\n}",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"id_movie\": 15\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -727,13 +727,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjExMjkxOSwiZXhwIjoxNjg2MTU2MTE5fQ.nldbimsEcWkvvNEsZpRKrcF3rdeFPlHSq4_kM-WJXbE",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"qty\": 10,\r\n    \"id_movie\": 1\r\n}",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"qty\": 10,\r\n    \"id_movie\": 16\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -766,13 +766,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjExMjkxOSwiZXhwIjoxNjg2MTU2MTE5fQ.nldbimsEcWkvvNEsZpRKrcF3rdeFPlHSq4_kM-WJXbE",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"return_movie\": \"10/06/2023\",\r\n    \"qty\": 10,\r\n    \"id_movie\": 1\r\n}",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"return_movie\": \"10/06/2023\",\r\n    \"qty\": 1,\r\n    \"id_movie\": 16\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -800,7 +800,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXIiOiJMdWlzIiwiaWF0IjoxNjg2MDE2OTExLCJleHAiOjE2ODYwNjAxMTF9.MMPhOewbkOoBmv0oYY9AY6Q1q_JpERWyFX9cMVn2ZDU",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjExMjkxOSwiZXhwIjoxNjg2MTU2MTE5fQ.nldbimsEcWkvvNEsZpRKrcF3rdeFPlHSq4_kM-WJXbE",
 								"type": "default"
 							}
 						],
@@ -814,7 +814,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}rent_movies/api/v1/return_movie/9",
+							"raw": "{{URL}}rent_movies/api/v1/return_movie/2",
 							"host": [
 								"{{URL}}rent_movies"
 							],
@@ -822,35 +822,7 @@
 								"api",
 								"v1",
 								"return_movie",
-								"9"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "update",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Avengers: End Game\",\r\n    \"description\": \"Movie Avenger: End Game. 2019 Movie\",\r\n    \"stock\": 200,\r\n    \"rental_price\": 4.00,\r\n    \"sale_price\": 6.00\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{URL}}movies/api/v1/0198dce8-4d3d-47e6-9bb3-84ef8fac5e96",
-							"host": [
-								"{{URL}}movies"
-							],
-							"path": [
-								"api",
-								"v1",
-								"0198dce8-4d3d-47e6-9bb3-84ef8fac5e96"
+								"2"
 							]
 						}
 					},
