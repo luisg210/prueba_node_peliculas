@@ -243,12 +243,12 @@
 							"formdata": [
 								{
 									"key": "title",
-									"value": "Avengers: End Game 2",
+									"value": "Otra Pelicula",
 									"type": "text"
 								},
 								{
 									"key": "description",
-									"value": "Movie Avenger: End Game. 2019 Movie",
+									"value": "Description here...",
 									"type": "text"
 								},
 								{
@@ -258,18 +258,18 @@
 								},
 								{
 									"key": "rental_price",
-									"value": "5",
+									"value": "2",
 									"type": "text"
 								},
 								{
 									"key": "sale_price",
-									"value": "6",
+									"value": "1",
 									"type": "text"
 								},
 								{
 									"key": "image",
 									"type": "file",
-									"src": "1.jpg"
+									"src": "hd.png"
 								}
 							],
 							"options": {
@@ -554,6 +554,44 @@
 					"response": []
 				},
 				{
+					"name": "Likes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjExMjkxOSwiZXhwIjoxNjg2MTU2MTE5fQ.nldbimsEcWkvvNEsZpRKrcF3rdeFPlHSq4_kM-WJXbE",
+								"type": "default"
+							},
+							{
+								"key": "email",
+								"value": "admin@admin.com",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}users/api/v1/likes/admin@admin.com",
+							"host": [
+								"{{URL}}users"
+							],
+							"path": [
+								"api",
+								"v1",
+								"likes",
+								"admin@admin.com"
+							],
+							"query": [
+								{
+									"key": "x-token",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Login",
 					"request": {
 						"method": "POST",
@@ -588,13 +626,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlhdCI6MTY4NjEwNzkxNywiZXhwIjoxNjg2MTUxMTE3fQ.FqtwVw_4NBnaRg8FUNuGUeCrxKdiNsDvPd5zzkDypwQ",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"admin122wd2@admin.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

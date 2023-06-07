@@ -1,5 +1,5 @@
 import { generateToken } from "../helpers/index.js";
-import { UserModel } from "../model/index.js";
+import { LikesModel, UserModel } from "../model/index.js";
 import bcrypt from 'bcryptjs';
 
 export const getAllUsers = async (req, res) => {
@@ -37,8 +37,7 @@ export const login = async ( req, res ) => {
                 
                 return res.status(200).send({
                     email,
-                    user: user_.user,
-                    role: user_.rol,
+                    user: user_,
                     token 
                 });
 
@@ -62,20 +61,41 @@ export const login = async ( req, res ) => {
 }
 
 export const renew = async (req, res) => {
-    const { email, user } = await req.body;
+    try {
+        const { email } = await req.body;
+
+        const data = await UserModel.findOne({
+            where: {
+                email
+            }
+        });
+        
+        if (data) {
+            const token = generateToken( email, data.dataValues.email );
     
-    const token = generateToken( email, user );
+            const user_ = await UserModel.findOne( { 
+                where: {
+                    email
+                }
+            } ); 
+    
+            return res.send({
+                token,
+                user: user_
+            });
+    
+        } else {
+            res.status(404).json({
+                msg: 'User not found'
+           }); 
+        } 
 
-    const user_ = await UserModel.findOne( { 
-        where: {
-            email
-        }
-     } );
-
-    res.send({
-        token,
-        user: user_
-    });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            msg: 'An error has ocurred'
+       }); 
+    }
 }
 
 export const createUser = async (req, res) => {
@@ -166,3 +186,21 @@ export const getRoleByEmail = (email) => async () => {
 
     return role;
 } 
+
+export const getLikesByUser = async (req, res) => {
+    try {
+        const data = await LikesModel.findAll({
+            where: {
+                email: req.params.email 
+            }
+        });
+        console.log(data)
+        return res.status(200).json(data);
+
+    } catch (error) {
+        console.error("Error getAllUser" + error);
+        return res.status(500).json({
+             msg: 'An error has ocurred'
+        }); 
+    }
+}
