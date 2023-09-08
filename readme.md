@@ -1,4 +1,4 @@
-Sistema de renta y venta de peliculas
+Sistema de renta y venta de peliculas (Prueba tecnica)
 
 Si se prueba de form local, ejecutar el script de la bd.
 Como usuario predeterminado es admin@admin.com y su contraseña es 1234.
